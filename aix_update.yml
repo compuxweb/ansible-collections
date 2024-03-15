@@ -1,0 +1,8 @@
+- hosts: all
+  collections:
+    - ibm.power_aix
+
+  tasks:
+    - name: Query and install latest updates
+      suma:
+        oslevel: 'latest'
